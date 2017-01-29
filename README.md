@@ -25,8 +25,8 @@ Changes 2017-01-29:
 
 Changes 2017-01-28:
 * sc updated to v5.4.10 - released 2017-01-25
-* ~~the v5.5.X unstable releases were pulled by UBNT on 2017-01-17 due to a memory leak. No ETA for a new release. If you have issues with v5.5.2 crashing downgrade to v5.4.9 or the latest stable candidate.
-* ~~I'm leaving the as-is v5.5.2 unstable image release up.
+* ~~the v5.5.X unstable releases were pulled by UBNT on 2017-01-17 due to a memory leak. No ETA for a new release. If you have issues with v5.5.2 crashing downgrade to v5.4.9 or the latest stable candidate.~~
+* ~~I'm leaving the as-is v5.5.2 unstable image release up.~~
 
 ---
 
