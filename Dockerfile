@@ -5,7 +5,7 @@ MAINTAINER The Goofball goofball222@gmail.com
 
 # Set environment variables
 ENV DEBIAN_FRONTEND noninteractive
-ENV UNIFI_VERSION 5.5.3-4bc07355c2
+ENV UNIFI_VERSION 5.5.4-9733a4b1af
 
 # Add apt repository keys, non-default sources, update apt database to load new data
 # Install deps and mongodb, download unifi .deb, install and remove package
