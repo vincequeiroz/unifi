@@ -5,7 +5,7 @@ MAINTAINER The Goofball goofball222@gmail.com
 
 # Set environment variables
 ENV DEBIAN_FRONTEND noninteractive
-ENV UNIFI_VERSION 5.6.1-0fab4f5321
+ENV UNIFI_VERSION 5.6.2-224554000b
 
 # Add apt repository keys, non-default sources, update apt database to load new data
 # Install deps and mongodb, download unifi .deb, install and remove package
@@ -28,8 +28,6 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 && \
     mongodb-server && \
   wget -nv https://www.ubnt.com/downloads/unifi/$UNIFI_VERSION/unifi_sysvinit_all.deb && \
   dpkg --install unifi_sysvinit_all.deb && \
-  # temp fix for v5.6.1 WebRTC JNI issue, will be fixed by UBNT in v5.6.2 unstable release
-  mv /usr/lib/unifi/lib/native/Linux/amd64 /usr/lib/unifi/lib/native/Linux/x86_64 && \
   # fix WebRTC stack guard error
   execstack -c /usr/lib/unifi/lib/native/Linux/x86_64/libubnt_webrtc_jni.so && \
   rm unifi_sysvinit_all.deb && \
